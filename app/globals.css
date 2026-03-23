@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+
+:root {
+  /* Light Mode - Kontras Tinggi */
+  --background: #ffffffc7;      /* Putih bersih */
+  --foreground: #787c8b;      /* Biru dongker sangat gelap (hampir hitam) */
+  --card: rgba(255, 255, 255, 0.651);            
+  --card-border: #303030;     /* Border abu-abu yang jelas */
+  --navy: #aaaaaa;
+  --gold: #b48a3d;            /* Gold sedikit lebih gelap agar kontras di background putih */
+  --slate: #adb0b4;           /* Teks sekunder lebih gelap */
+}
+
+.dark {
+  /* Dark Mode - Tetap Navy */
+  --background: #0f172a;
+  --foreground: #f8f9fa;
+  --card: #1e293b;
+  --card-border: rgba(66, 60, 60, 0.938);
+  --gold: #c5a059;
+}
+
+@layer base {
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s ease;  }
+}
+/* Animasi Fade In untuk kartu skill */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.skill-card-animate {
+  animation: fadeIn 0.5s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--card-border);
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c5a059;
+  }
+}
+
+/* Custom Selection Color */
+/* ::selection {
+  background-color: var(--gold);
+  color: var(--navy);
+} */
