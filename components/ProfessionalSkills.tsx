@@ -4,21 +4,28 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LayoutGrid, Database, Monitor, Server, Cog } from "lucide-react";
 import { SkillCard } from "./SkillCard";
-import { GlowingEffect } from "./ui/glowing-effect"; // Pastikan path benar
 
 
 const skillsData = [
   // DATA
   { id: 1, title: "Machine Learning", category: "data", rating: 4.5, label: "Advanced" },
-  { id: 2, title: "Data Visualization", category: "data", rating: 4, label: "Advanced" },
+  { id: 2, title: "Data Visualization", category: "data", rating: 4.5, label: "Advanced" },
+  { id: 13, title: "Deep Learning", category: "data", rating: 4, label: "Advanced" },
+  { id: 14, title: "NLP & LLMs", category: "data", rating: 4.5, label: "Expert" },
   // FRONTEND
   { id: 3, title: "React.js", category: "frontend", rating: 4, label: "Advanced" },
   { id: 4, title: "Tailwind CSS", category: "frontend", rating: 5, label: "Expert" },
+  { id: 10, title: "Next.js", category: "frontend", rating: 4, label: "Advanced" },
+  { id: 11, title: "Laravel", category: "frontend", rating: 4, label: "Advanced" },
+  { id: 17, title: "Flutter", category: "frontend", rating: 4, label: "Advanced" },
   // BACKEND
   { id: 5, title: "Node.js", category: "backend", rating: 3.5, label: "Intermediate" },
   { id: 6, title: "Python (FastAPI)", category: "backend", rating: 4.5, label: "Expert" },
+  { id: 12, title: "LangChain-RAG", category: "backend", rating: 4, label: "Advanced" },
+  { id: 15, title: "Golang", category: "backend", rating: 4, label: "Advanced" },
+  { id: 16, title: "C++", category: "backend", rating: 3.5, label: "Intermediate" },
   // TOOLS & OS
-  { id: 7, title: "PostgreSQL", category: "tools&os", rating: 4, label: "Advanced" },
+  { id: 7, title: "SQL", category: "tools&os", rating: 4, label: "Advanced" },
   { id: 8, title: "Git & GitHub", category: "tools&os", rating: 4.5, label: "Expert" },
   { id: 9, title: "Linux / Ubuntu", category: "tools&os", rating: 3.5, label: "Intermediate" },
 ];
@@ -41,7 +48,6 @@ export function ProfessionalSkills() {
 
   return (
     <section id="skills" className="py-24 px-[8%] transition-colors">
-            <GlowingEffect spread={40} glow={true} disabled={false} proximity={64} inactiveZone={0.01} borderWidth={2} />
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-[var(--foreground)]">
           Professional <span className="text-[#c5a059]">Skills</span>

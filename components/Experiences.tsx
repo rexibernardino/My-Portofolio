@@ -53,10 +53,16 @@ export function Experiences() {
             {activeTab === "work" && (
               <motion.div key="work" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-8">
                 <TimelineItem 
-                  title="Python Developer (Auto Macro Project)"
-                  company="Freelance / Personal Project"
-                  date="2025 - Present"
-                  description="Mengembangkan aplikasi otomasi berbasis Python untuk meningkatkan efisiensi alur kerja."
+                  title="Data Analyst Intern"
+                  company="Mesana Investama Utama"
+                  date="April 2026 - Present"
+                  description="Developed an interactive Streamlit application for credit scoring automation (DSCR, LTV, DER), implemented a Python model for risk simulation based on interest rate/EBITDA fluctuations, and formulated company loan ceiling recommendations based on in-depth financial statement analysis."
+                />
+                <TimelineItem 
+                  title="Data Analyst Intern"
+                  company="Badan Riset dan Inovasi Nasional Republik Indonesia (BRIN)"
+                  date="April 2026 - June 2024 - August 2024 "
+                  description="Engineered a Python based system to automate data recapitulation, applying Machine Learning models to analyze intellectual property, and create a high-fidelity website prototype for INTIPDAQU ."
                 />
               </motion.div>
             )}
@@ -66,7 +72,7 @@ export function Experiences() {
                 <TimelineItem 
                   title="Bachelor of Informatics"
                   company="Telkom University"
-                  date="September 2020 - February 2025"
+                  date="September 2021 - February 2025"
                   score="3.58 / 4.00"
                   description="Graduated with a focus on Data Science and Machine Learning, completing a thesis on extracting informations on product advertisements posts on Twitter using NLP techniques."
                 />
@@ -109,7 +115,7 @@ function TimelineItem({ title, company, date, description, score }: any) {
             {/* TAMPILAN SCORE: Hanya muncul jika prop score ada */}
             {score && (
               <span className="bg-[#c5a059]/10 text-[#c5a059] text-[10px] font-black px-2 py-1 rounded-md border border-[#c5a059]/20">
-                GPA: {score}
+                GPA: 3,58 {score}
               </span>
             )}
           </div>

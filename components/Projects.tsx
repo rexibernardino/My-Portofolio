@@ -9,23 +9,167 @@ import { Project } from "@/data/projectsData";
 const PROJECTS: Project[] = [ // Pastikan tipe data Project di-import
   {
     id: 1,
-    title: "Financial Assistant Bot",
-    category: "AI / FINTECH",
+    title: "Indonesian Cuisiene Assistant",
+    category: "AI Personal Assistant",
     year: "2026", // Properti baru
-    description: "A personal AI-powered financial assistant...",
+    description: "This project is a Retrieval-Augmented Generation (RAG) system designed to provide an intelligent Q&A assistant for Indonesian food recipes. By combining the power of LangChain, FAISS, and Google Gemini API, this assistant delivers accurate answers including ingredients, cooking steps, and direct source references from the dataset.",
     image: "/project1.jpg",
     heroImage: "/project1-hero.jpg", // Properti baru
-    tags: ["PYTHON", "SUPABASE", "RAG"],
+    tags: ["PYTHON", "LangChain", "FAISS", "Google Gemini API","Kaggle", "RAG"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/rexibernardino/RAG-Indonesia-Recipe",
     // Tambahkan properti detail ini:
     whatDoes: [
-      { number: "01", text: "Natural language input for transactions." },
-      { number: "02", text: "Advanced RAG Engine for classification." }
+      { number: "01", text: "Provides accurate information about Indonesian food recipes." },
+      { number: "02", text: "Offers detailed cooking instructions and ingredient lists." },
+      { number: "03", text: "Cites sources directly from the dataset for transparency." },
+      { number: "04", text: "Utilizes RAG architecture for enhanced response quality." },
+      { number: "05", text: "Integrates with Google Gemini API for advanced language understanding." },
+      { number: "06", text: "Employs FAISS for efficient vector search and retrieval." },
+      { number: "07", text: "Built with Python and LangChain for robust backend processing." },
+      { number: "08", text: "Trained on a comprehensive dataset of Indonesian recipes for cultural relevance." },
     ],
     whyMatters: [
-      "Transforms manual record-keeping into efficient conversations.",
-      "Provides full visibility into financial health."
+      "Addresses the need for a culturally specific culinary assistant in Indonesia.",
+      "Enhances accessibility to traditional recipes for a wider audience.",
+      "Demonstrates the practical application of RAG architecture in a real-world context.",
+      "Contributes to the preservation and promotion of Indonesian culinary heritage through technology.",
+      "Showcases the potential of AI in enhancing everyday tasks and knowledge sharing.",
+      "Provides a valuable resource for both novice and experienced cooks interested in Indonesian cuisine.",
+      "Highlights the importance of integrating advanced AI models with domain-specific datasets for optimal performance.",
+      "Encourages further innovation in the field of AI personal assistants with a focus on cultural and contextual relevance."
+    ]
+  },
+
+    {
+    id: 2,
+    title: "Smart Trash Recognition System",
+    category: "AI Computer Vision",
+    year: "2026", // Properti baru
+    description: "This project aims to assist in sorting waste by classifying images into 6 categories: cardboard, glass, metal, paper, plastic, and trash. The system utilizes a Convolutional Neural Network (CNN) architecture, trained on a dataset of 25,000 images, to achieve high accuracy in waste classification. This project contributes to environmental sustainability by promoting proper waste management and recycling practices.",
+    image: "/project2.jpg",
+    heroImage: "/project2-hero.jpg", // Properti baru
+    tags: ["PYTHON", "Computer Vision", "CNN", "Deep Learning","Kaggle", "Waste Classification"],
+    liveUrl: "https://trash-detection-pmrypudmpldg5qnpbrl5s5.streamlit.app/",
+    githubUrl: "https://github.com/rexibernardino/Trash-Detection",
+    // Tambahkan properti detail ini:
+    whatDoes: [
+      { number: "01", text: "Provides accurate information about waste sorting and classification." },
+      { number: "02", text: "Offers detailed instructions for proper waste disposal." },
+      { number: "03", text: "Utilizes computer vision techniques for image analysis." },
+      { number: "04", text: "Trained on a large dataset of waste images for accurate classification." },
+      { number: "05", text: "Utilizes a Convolutional Neural Network (CNN) architecture." },
+      { number: "06", text: "Leverages deep learning techniques for improved performance." },
+      { number: "07", text: "Supports real-time waste classification for practical applications." },
+      { number: "08", text: "Promotes environmental sustainability through improved waste management." },
+    ],
+    whyMatters: [
+      "Addresses the global issue of waste management and promotes recycling practices.",
+      "Enhances public awareness about proper waste sorting and its environmental impact.",
+      "Demonstrates the practical application of computer vision in solving real-world problems.",
+      "Contributes to the development of smart city initiatives by improving waste management systems.",
+      "Showcases the potential of AI in promoting sustainability and environmental responsibility.",
+      "Provides a valuable tool for individuals and organizations to manage waste more effectively.",
+      "Highlights the importance of integrating AI technologies with environmental initiatives for a greener future.",
+      "Encourages further innovation in the field of AI for environmental sustainability and waste management solutions."
+    ]
+  },
+  
+    {
+    id: 3,
+    title: "Animal Image Classifier",
+    category: "AI Computer Vision",
+    year: "2023", // Properti baru
+    description: "This project aims to classify images of various animal species using a Convolutional Neural Network (CNN) architecture. The system is trained on a dataset of 10,000 images across 10 different animal categories, achieving high accuracy in identifying and categorizing animals in real-world scenarios.",
+    image: "/project3.jpg",
+    heroImage: "/project3-hero.jpg", // Properti baru
+    tags: ["PYTHON", "Computer Vision", "CNN", "Deep Learning","Kaggle", "Animal Classification"],
+    liveUrl: "#",
+    githubUrl: "hhttps://github.com/rexibernardino/Animal-Image-Classification-Using-Resnet",
+    // Tambahkan properti detail ini:
+    whatDoes: [
+      { number: "01", text: "Performs accurate classification of animal images across multiple species." },
+      { number: "02", text: "Offers detailed information about each identified animal species." },
+      { number: "03", text: "Supports real-time animal image analysis for practical applications." },
+      { number: "04", text: "Utilizes a Convolutional Neural Network (CNN) architecture." },
+      { number: "05", text: "Trained on a diverse dataset of animal images for robust performance." },
+      { number: "06", text: "Achieves high accuracy in identifying and categorizing animals in real-world scenarios." },
+      { number: "07", text: "Supports multi-class animal classification with detailed species information." },
+      { number: "08", text: "Provides a user-friendly interface for easy animal image classification." },
+    ],
+    whyMatters: [
+      "Addresses the need for accurate animal classification in various fields such as wildlife conservation, education, and research.",
+      "Enhances public awareness about biodiversity and the importance of different animal species.",
+      "Demonstrates the practical application of CNN architecture in a real-world context.",
+      "Contributes to the development of AI tools for wildlife monitoring and conservation efforts.",
+      "Showcases the potential of AI in promoting environmental awareness and biodiversity conservation.",
+      "Provides a valuable resource for researchers, educators, and wildlife enthusiasts to identify and learn about different animal species.",
+      "Highlights the importance of integrating AI technologies with environmental and educational initiatives for a better understanding of biodiversity.",
+      "Encourages further innovation in the field of AI for wildlife conservation and biodiversity monitoring solutions."
+    ]
+  },
+    {
+    id: 4,
+    title: "Information extraction of product advertisement post in social media using BiLSTM-CRF",
+    category: "AI Natural Language Processing",
+    year: "2025", // Properti baru
+    description: "This project focuses on extracting relevant information from product advertisement posts on social media using a BiLSTM-CRF model.",
+    image: "/project4.jpg",
+    heroImage: "/project4-hero.jpg", // Properti baru
+    tags: ["PYTHON", "NLP", "BiLSTM-CRF", "Deep Learning","Data Scraping", "Information Extraction"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/rexibernardino/FinalProject",
+    // Tambahkan properti detail ini:
+    whatDoes: [
+      { number: "01", text: "Extracts key information from product advertisement posts on social media." },
+      { number: "02", text: "Offers detailed product information and pricing details." },
+      { number: "03", text: "Cites sources directly from the dataset for transparency." },
+      { number: "04", text: "Utilizes BiLSTM-CRF architecture for accurate information extraction." },
+      { number: "05", text: "Integrates with social media APIs for real-time data collection." },
+      { number: "06", text: "Employs efficient data processing techniques for scalable analysis." },
+      { number: "07", text: "Built with Python and NLP libraries for robust backend processing." },
+      { number: "08", text: "Trained on a comprehensive dataset of product advertisement posts for cultural relevance." },
+    ],
+    whyMatters: [
+      "Addresses the need for aculturally specific information extraction system in the social media domain.",
+      "Enhances the ability to quickly gather and analyze product information from various social media platforms.",
+      "Demonstrates the practical application of BiLSTM-CRF architecture in a real-world context.",
+      "Contributes to the development of more effective tools for market research and consumer behavior analysis.",
+      "Showcases the potential of AI in automating and improving the efficiency of information processing tasks.",
+      "Provides a valuable resource for businesses and researchers to understand and track product advertising trends.",
+      "Highlights the importance of integrating advanced AI models with domain-specific datasets for optimal performance.",
+      "Encourages further innovation in the field of AI personal assistants with a focus on cultural and contextual relevance."
+    ]
+  },
+    {
+    id: 5,
+    title: "My Dompet App - Personal Finance Management System",
+    category: "AI Personal Assistant",
+    year: "2024", // Properti baru
+    description: "My Dompet App is a personal finance management system designed to help users track and manage their finances effectively. The app provides features such as expense tracking, budget planning, and financial goal setting. Built with Flutter and Dart, My Dompet App offers a user-friendly interface and seamless performance across multiple platforms.",
+    image: "/project1.jpg",
+    heroImage: "/project1-hero.jpg", // Properti baru
+    tags: ["Flutter", "Dart", "Personal Finance", "Mobile App"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/rexibernardino/my-dompet-app-flutter",
+    // Tambahkan properti detail ini:
+    whatDoes: [
+      { number: "01", text: "Provides accurate information about personal finance management." },
+      { number: "02", text: "Offers detailed expense tracking and budget planning tools." },
+      { number: "03", text: "Enables users to set and monitor financial goals." },
+      { number: "04", text: "Provides insights and analytics for better financial decision-making." },
+      { number: "05", text: "Offers a user-friendly interface for easy navigation and use." },
+      { number: "06", text: "Supports cross-platform compatibility for seamless use on different devices." },
+      { number: "07", text: "Built with Flutter and Dart for robust backend processing." },
+      { number: "08", text: "Trained on a comprehensive dataset of personal finance data for cultural relevance." },
+    ],
+    whyMatters: [
+      "Addresses the need for a culturally specific personal finance assistant.",
+      "Enhances accessibility to financial management tools for a wider audience.",
+      "Demonstrates the practical application of mobile app development in a real-world context.",
+      "Contributes to the development of more effective tools for personal finance management.",
+      "Showcases the potential of AI in enhancing everyday tasks and knowledge sharing.",
+      "Provides a valuable resource for both novice and experienced users interested in personal finance.",
     ]
   },
 ];
