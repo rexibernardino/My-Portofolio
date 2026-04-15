@@ -87,7 +87,7 @@ export function Contact() {
           transition={{ delay: 0.5 }}
           className="mt-20 pt-8 border-t border-[var(--card-border)] text-sm text-slate-400"
         >
-          <p>© 2026 Mario Bernardino. Built with Passion & Data.</p>
+          <p>© 2026 Rexi Bernardino. Built with Passion.</p>
         </motion.div>
       </div>
     </section>

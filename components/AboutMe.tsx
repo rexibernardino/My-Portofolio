@@ -21,7 +21,7 @@ export function AboutMe() {
             <div className="w-full h-full overflow-hidden rounded-2xl bg-slate-200 dark:bg-slate-800 border border-[var(--card-border)]">
               <img 
                 src="/profile.jpg" 
-                alt="Mario Bernardino" 
+                alt="Rexi Bernardino" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
@@ -42,7 +42,7 @@ export function AboutMe() {
             {/* GRID INFO PRIBADI */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
               <InfoItem icon={<User size={20} />} label="Full Name" value="Mario Bernardino Surexi" />
-              <InfoItem icon={<GraduationCap size={20} />} label="Education" value="S1 Informatics, Telkom University" />
+              <InfoItem icon={<GraduationCap size={20} />} label="Education" value="Bachelor of Informatics, Telkom University" />
               <InfoItem icon={<MapPin size={20} />} label="Location" value="Sikka, Flores, NTT" />
               <InfoItem icon={<BookOpen size={20} />} label="Specialization" value="Data Science & ML" />
             </div>
@@ -55,7 +55,7 @@ export function AboutMe() {
                   <span>Main Focus</span>
                 </div>
                 <p className="text-sm text-slate-600 dark:text-slate-400">
-                  Data Analysis, Predictive Modeling, and Deep Learning Applications.
+                  Data Analysis, Predictive Modeling, Machine Learning, and Deep Learning Applications.
                 </p>
               </div>
 
@@ -65,7 +65,7 @@ export function AboutMe() {
                   <span>Interests</span>
                 </div>
                 <p className="text-sm text-slate-600 dark:text-slate-400">
-                  Automation Macros, Web Scraping, and UFC/Martial Arts Analysis.
+                  Automation Macros, Web Scraping, Finance Analysis, and UFC/Martial Arts Analysis.
                 </p>
               </div>
             </div>

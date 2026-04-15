@@ -172,6 +172,66 @@ const PROJECTS: Project[] = [ // Pastikan tipe data Project di-import
       "Provides a valuable resource for both novice and experienced users interested in personal finance.",
     ]
   },
+      {
+    id: 6,
+    title: "Sundanese Tweet Emotion Analysis",
+    category: "AI Natural Language Processing",
+    year: "2023", // Properti baru
+    description: "Sundanese Tweet Emotion Analysis is a project that focuses on analyzing the emotional content of tweets written in the Sundanese language. The project aims to develop a robust sentiment analysis model that can accurately identify and categorize emotions expressed in Sundanese social media posts.",
+    image: "/project6.jpg",
+    heroImage: "/project6-hero.jpg", // Properti baru
+    tags: ["PYTHON", "NLP", "Sentiment Analysis", "Deep Learning","Kaggle", "Emotion Analysis"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/rexibernardino/Sundanese-Tweet-Emotion-Classification",
+    // Tambahkan properti detail ini:
+    whatDoes: [
+      { number: "01", text: "Analyzes the emotional content of tweets written in the Sundanese language." },
+      { number: "02", text: "Develops a robust sentiment analysis model for the Sundanese language." },
+      { number: "03", text: "Provides a comprehensive dataset of Sundanese social media posts for training and evaluation." },
+      { number: "04", text: "Utilizes deep learning techniques for accurate emotion classification." },
+      { number: "05", text: "Offers insights and analytics for better understanding of emotional trends in the Sundanese language." },
+      { number: "06", text: "Supports the development of culturally relevant natural language processing applications." },
+      { number: "07", text: "Built with Python and TensorFlow for robust backend processing." },
+      { number: "08", text: "Trained on a comprehensive dataset of Sundanese social media posts for cultural relevance." },
+    ],
+    whyMatters: [
+      "Addresses the need for emotion analysis tools specific to the Sundanese language.",
+      "Enhances the ability to understand and analyze emotional trends in Sundanese social media posts.",
+      "Demonstrates the practical application of sentiment analysis in a real-world context.",
+      "Contributes to the development of more effective tools for natural language processing in underrepresented languages.",
+      "Showcases the potential of AI in promoting cultural understanding and linguistic diversity.",
+      "Provides a valuable resource for researchers and developers interested in natural language processing for the Sundanese language.",
+    ]
+  },
+  {
+    id: 7,
+    title: "PvZ SLL",
+    category: "Game Development",
+    year: "2023", // Properti baru
+    description: "Simple Plant versus Zombie game using Single Linked List with CPP languages.",
+    image: "/project7.jpg",
+    heroImage: "/project7-hero.jpg", // Properti baru
+    tags: ["C++", "Data Structures", "Game Development"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/rexibernardino/PvZ-SLL",
+    // Tambahkan properti detail ini:
+    whatDoes: [
+      { number: "01", text: "Develops a simple Plant versus Zombie game using Single Linked List data structure in C++." },
+      { number: "02", text: "Implement efficient memory management using linked list operations." },
+      { number: "03", text: "Provides a fun and interactive gaming experience for players." },
+      { number: "04", text: "Demonstrates the application of data structures in game development." },
+      { number: "05", text: "Offers a hands-on learning experience for students interested in C++ programming." },
+      { number: "06", text: "Supports the development of more complex game logic using linked list implementations." },
+      { number: "07", text: "Utilizes efficient data structures for optimal game performance." },
+      { number: "08", text: "Teaches fundamental concepts of data structures and algorithms through practical implementation." },
+    ],
+    whyMatters: [
+      "Addresses the need for educational game development projects that teach data structures and algorithms.",
+      "Enhances the learning experience for students interested in C++ programming and game development.",
+      "Demonstrates the practical application of linked list data structures in a real-world context.",
+      "Contributes to the development of more effective educational tools for programming and game development.",
+    ]
+  },
 ];
 
 export function Projects() {
